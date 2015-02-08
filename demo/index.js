@@ -13,8 +13,8 @@ module.exports = yeoman.generators.Base.extend({
   },
   
   copyDemoFiles: function(){
-      this.copy("_demo.css", "app/css/demo.css");
-      this.copy("_demo.phtml", "app/sections/demo.phtml");
+      this.copy("css/_demo.css", "app/css/demo.css");
+      this.copy("phtml/_demo.phtml", "app/sections/demo.phtml");
   },
   
   copyImageFiles: function(){
