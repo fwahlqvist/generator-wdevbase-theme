@@ -1,0 +1,13 @@
+div.breadcrumb a{
+    text-decoration: none;
+    color: #777;
+}
+
+div.breadcrumb a:hover{
+    color:blue;
+}
+
+div.ui.breadcrumb .active.section{
+    font-weight: normal;
+    color:#ccc;
+}
