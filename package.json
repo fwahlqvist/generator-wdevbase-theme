@@ -18,7 +18,10 @@
   },
   "files": [
     "app",
-    "demo"
+    "demo",
+    "main",
+    "breadcrumb",
+    "about"
   ],
   "keywords": [
     "yeoman-generator"
