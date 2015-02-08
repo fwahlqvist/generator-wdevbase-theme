@@ -7,12 +7,12 @@ module.exports = function(grunt) {
           dest: "build/layout/layout.phtml",
         },
         js: {
-          src: ["app/js/index.js"],
-          dest: "build/js/index.js",
+          src: ["app/js/angular-semantic-ui.js", "app/js/scriptsHead.js", "app/sections/js/*.js", "app/js/scriptsFooter.js"],
+          dest: "build/js/scripts.js",
         },
         css: {
           src: ["app/css/*.css"],
-          dest: "build/css/main.css",
+          dest: "build/css/app.css",
         },
       },
       
@@ -47,4 +47,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.registerTask('default', ['concat']);
 };
