@@ -11,15 +11,15 @@
     $this->headLink()->appendStylesheet($basePath . '/css/app.css', 'all')
                      ->prependStylesheet('http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.8.1/semantic.min.css', 'all');
     echo $this->headLink();
-    ?>
-
-    
+    ?>    
     <!-- JavaScripts -->
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular.min.js"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.8.1/semantic.min.js"></script>        
-    <script type="text/javascript" src="js/scripts.js"></script>        
-
+    <?php
+    $this->headScript()->appendFile($basePath . '/js/scripts.js')
+                        ->prependFile('http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+                        ->prependFile('http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular.min.js')
+                        ->prependFile('http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.8.1/semantic.min.js');
+    echo $this->headScript();
+    ?>
     
     <!-- Section CSS and JavaScript -->
     <!-- Demo 
