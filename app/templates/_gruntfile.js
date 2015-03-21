@@ -2,9 +2,13 @@ module.exports = function(grunt) {
     grunt.initConfig({
     //task config
       concat: {
-        phtml: {
+        layout: {
           src: ["app/phtml/head.phtml", "app/phtml/header.phtml", "app/sections/*.phtml", "app/phtml/footer.phtml"],
           dest: "build/layout/layout.phtml",
+        },
+        application: {
+          src: ["app/sections/*.phtml"],
+          dest: "/build/sections/index.phtml",
         },
         js: {
           src: ["app/js/angular-semantic-ui.js", "app/js/scriptsHead.js", "app/sections/js/*.js", "app/js/scriptsFooter.js"],
